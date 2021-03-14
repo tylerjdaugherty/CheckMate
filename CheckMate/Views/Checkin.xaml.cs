@@ -13,10 +13,10 @@ namespace CheckMate.Views
             //this.BindingContext = CheckinViewModel;
         }
 
-        async void checkInButton_Clicked(object sender, EventArgs args)
+        void checkInButton_Clicked(System.Object sender, System.EventArgs e)
         {
-            Console.WriteLine("Check In Clicked");
         }
-        
+
+
     }
 }
