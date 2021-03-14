@@ -1,5 +1,6 @@
 ﻿using Xamarin.Forms;
 using CheckMate.ViewModels;
+using CheckMate.Views;
 
 namespace CheckMate
 {
@@ -8,10 +9,10 @@ namespace CheckMate
         
         public MainPage()
         {
-            InitializeComponent();
+            // InitializeComponent();
+            Checkin checkin = new Checkin();
 
-
-            BindingContext = new AttendanceTrackerViewModel();
+           // BindingContext = new AttendanceTrackerViewModel();
             
         }
 

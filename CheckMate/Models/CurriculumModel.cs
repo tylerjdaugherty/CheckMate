@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 
 namespace ZenWay.Models
@@ -10,7 +11,7 @@ namespace ZenWay.Models
         public int id { get; set; }
         public string name { get; set; }
 
-        
+        public static List<CurriculumModel> allCurriculum = new List<CurriculumModel>();
     }
 
     
