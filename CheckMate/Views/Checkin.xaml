@@ -21,16 +21,17 @@
             </Grid.RowDefinitions>
             <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0" HorizontalOptions="CenterAndExpand" Margin="10">
                 <StackLayout Orientation="Vertical" Margin="20">
-                    <Label Text="First Technique: " HorizontalOptions="Start"/>
-                    <Picker x:Name="techniqueOne_picker" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" ItemsSource="{Binding curriculm}" ItemDisplayBinding="{Binding name}"  /> 
+                    <Label Text="Curriculum One: " HorizontalOptions="Start"/>
+                    <Picker x:Name="techniqueOne_picker" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" ItemsSource="{Binding curriculm}" ItemDisplayBinding="{Binding name}"
+                      SelectedItem="{Binding cur, Mode=TwoWay}"/> 
                 </StackLayout>
                  <StackLayout Orientation="Vertical" Margin="20">
-                     <Label Text="Second Technique: " HorizontalOptions="Center"/>
-                     <Picker x:Name="techniqueTwo_picker" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" ItemsSource="{Binding curriculm}" ItemDisplayBinding="{Binding name}" SelectedItem="{Binding techniqueOne, Mode=TwoWay}"/> 
+                     <Label Text="Curriculum Two: " HorizontalOptions="Center"/>
+                     <Picker x:Name="techniqueTwo_picker" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" ItemsSource="{Binding curriculm}" ItemDisplayBinding="{Binding name}" SelectedItem="{Binding cur2, Mode=TwoWay}"/> 
                 </StackLayout>
                  <StackLayout Orientation="Vertical" Margin="20">
-                     <Label Text="Third Technique: " HorizontalOptions="Center"/>
-                      <Picker x:Name="techniqueThree_picker" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" ItemsSource="{Binding curriculm}" ItemDisplayBinding="{Binding name}"  /> 
+                     <Label Text="Curriculum Three: " HorizontalOptions="Center"/>
+                      <Picker x:Name="techniqueThree_picker" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" ItemsSource="{Binding curriculm}" ItemDisplayBinding="{Binding name}" SelectedItem="{Binding cur2, Mode=TwoWay}"  /> 
                 </StackLayout>
                  
             </StackLayout>
